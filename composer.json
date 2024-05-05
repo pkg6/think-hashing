@@ -1,0 +1,37 @@
+{
+  "name": "tp5er/think-hashing",
+  "description": "The thinkphp Hashing package.",
+  "license": "MIT",
+  "homepage": "https://github.com/pkg6/think-hashing",
+  "authors": [
+    {
+      "name": "zhiqiang",
+      "email": "zhiqiang2033@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "topthink/framework": "^6.0 || ^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "tp5er\\think\\hashing\\": "src/"
+    },
+    "files": [
+      "src/function.php"
+    ]
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.9"
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "tp5er\\think\\hashing\\Service"
+      ],
+      "config": {
+        "hashing": "config/hashing.php"
+      }
+    }
+  }
+}
